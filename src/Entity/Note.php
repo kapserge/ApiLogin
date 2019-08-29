@@ -41,6 +41,11 @@ class Note
      */
     private $cours;
 
+    /**
+     * @ORM\Column(type="datetime")
+     */
+    private $DateInsertion;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -102,6 +107,18 @@ class Note
     public function setCours(?Cours $cours): self
     {
         $this->cours = $cours;
+
+        return $this;
+    }
+
+    public function getDateInsertion(): ?\DateTimeInterface
+    {
+        return $this->DateInsertion;
+    }
+
+    public function setDateInsertion(\DateTimeInterface $DateInsertion): self
+    {
+        $this->DateInsertion = $DateInsertion;
 
         return $this;
     }

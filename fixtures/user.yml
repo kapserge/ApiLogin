@@ -1,0 +1,9 @@
+App\Entity\User:
+  user_{1..20}:
+    firstname: <firstName()>
+    lastname: <lastName()>
+    email: <email()>
+    birthday: <dateTimeBetween('-100 years', '-10 years')>
+    email (unique): <email()>
+    roles: [<lexify('ROLE_USER')>]
+

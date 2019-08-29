@@ -1,0 +1,8 @@
+# /Resources/fixtures/Cours.yml
+
+App\Entity\Cours:
+ cours_{1..10}:
+   NomCours: <firstName()>
+   ponderation: <numberBetween(7,8)>
+   code: <randomNumber()>
+   titulaire: <lastName()>

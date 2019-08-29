@@ -1,0 +1,10 @@
+# /Resources/fixtures/Note.yml
+
+App\Entity\Note:
+ note_{1..10}:
+   point: <numberBetween(0,20)>
+   commentaire: <>
+   ponderation: <numberBetween(7,8)>
+   cours: '@cours*'
+   user: '@user*'
+   
